@@ -1,0 +1,51 @@
+disabled_rules:
+opt_in_rules:
+excluded:
+   - Pods
+included:
+    - Absinthe
+whitelist_rules:
+    - closing_brace
+    - closure_end_indentation
+    - closure_spacing
+    - colon
+    - comma
+    - control_statement
+    - discarded_notification_center_observer
+    - empty_enum_arguments
+    - empty_parameters
+    - empty_parentheses_with_trailing_closure
+    - first_where
+    - for_where
+    - leading_whitespace
+    - legacy_cggeometry_functions
+    - legacy_constant
+    - legacy_constructor
+    - legacy_nsgeometry_functions
+    - opening_brace
+    - operator_usage_whitespace
+    - private_over_fileprivate
+    - redundant_discardable_let
+    - redundant_nil_coalescing
+    - redundant_void_return
+    - return_arrow_whitespace
+    - syntactic_sugar
+    - trailing_semicolon
+    - trailing_whitespace
+    - vertical_whitespace
+    - void_return
+    - switch_case_on_newline
+# Custom rules
+    - custom_rules
+
+custom_rules:
+    no_placeholder_in_string:
+        name: "No placeholder in string"
+        regex: (\"_*PLACEHOLDER_*)
+        match_kinds: string
+        severity: error
+    ObjCRule:
+        message: "@objc should be written on the same line."
+        regex: (@objc[\n]+)
+        match_tokens: identifier
+        severity: error
