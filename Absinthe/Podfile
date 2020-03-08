@@ -1,13 +1,57 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '13.2'
+use_frameworks!
+
+workspace 'Absinthe'
+
+project 'Absinthe.xcodeproj'
+project 'AbsintheUI/AbsintheUI.xcodeproj'
+project 'ViewModel/ViewModel.xcodeproj'
+project 'Service/Service.xcodeproj'
+
+def absintheUIModulePods
+  pod 'SnapKit', '~> 5.0.1'
+  pod 'RxCocoa', '~> 5'
+end
+
+def viewModelModulePods
+  pod 'ReactorKit'
+end
+
+def serviceModulePods
+  pod 'Kingfisher', '~> 5.0'
+end
+
+def commonPods
+  pod 'Then'
+  pod 'SwiftLint'
+  pod 'RxSwift', '~> 5'
+end
 
 target 'Absinthe' do
-  pod 'SwiftLint'
-  pod 'SnapKit', '~> 5.0.1'
-  pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
-  pod 'ReactorKit'
-  pod 'Then'
-  pod 'Kingfisher', '~> 5.0'
-
+  project 'Absinthe.xcodeproj'
+  pod 'Swinject'
+  absintheUIModulePods
+  viewModelModulePods
+  serviceModulePods
+  commonPods
 end
+
+target 'AbsintheUI' do
+  project 'AbsintheUI/AbsintheUi.xcodeproj'
+  absintheUIModulePods
+  commonPods
+end
+
+target 'ViewModel' do
+  project 'ViewModel/ViewModel.xcodeproj'
+  viewModelModulePods
+  commonPods
+end
+
+target 'Service' do
+  project 'Service/Service.xcodeproj'
+  serviceModulePods
+  commonPods 
+end
+ 

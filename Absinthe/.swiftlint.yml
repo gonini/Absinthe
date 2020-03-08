@@ -4,6 +4,9 @@ excluded:
    - Pods
 included:
     - Absinthe
+    - ViewModel/
+    - AbsintheUI/
+    - Service/
 whitelist_rules:
     - closing_brace
     - closure_end_indentation

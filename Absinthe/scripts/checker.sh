@@ -17,6 +17,26 @@ else
     __system "Done 🤟"
 fi
 
+echo "xunique AbsintheUI.xcodeproj"
+if ! xunique AbsintheUI/AbsintheUI.xcodeproj; then
+    __error "Found xunique errors"
+else
+    __system "Done 🤟"
+fi
+
+echo "xunique ViewModel.xcodeproj"
+if ! xunique ViewModel/ViewModel.xcodeproj; then
+    __error "Found xunique errors"
+else
+    __system "Done 🤟"
+fi
+
+echo "xunique Service.xcodeproj"
+if ! xunique Service/Service.xcodeproj; then
+    __error "Found xunique errors"
+else
+    __system "Done 🤟"
+fi
 
 echo ""
 cd ..

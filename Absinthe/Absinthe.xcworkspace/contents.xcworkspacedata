@@ -5,6 +5,15 @@
       location = "group:Absinthe.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:AbsintheUI/AbsintheUI.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:ViewModel/ViewModel.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Service/Service.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>

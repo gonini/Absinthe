@@ -3,30 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27D8FC1DA429F9223CD20EF8F970D9EC /* libPods-Absinthe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AF76B4FB3E16FB0324C3483FB8B09CD /* libPods-Absinthe.a */; };
+		691097229BD06580541E2C4C45139C6C /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A005250E156C2BB269AB10005BCD4F63 /* ViewModel.framework */; };
+		6FD1D1AFA7B7E24DBD52AF306F734131 /* AbsintheUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDEF70DE65E9014C3AD1028FEA9E3D35 /* AbsintheUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7915CFE32F60BED360645E150A414EC0 /* Pods_Absinthe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7DAA7D856DA60EA1826336390B3D794 /* Pods_Absinthe.framework */; };
 		AE326D698676D7CB10B76B37A1BD38B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E2AE321C06C745B017CBD6BBCFFBCFA /* Main.storyboard */; };
+		AF65EF4FD70BB38EB47519D6A12E2CDE /* ViewModel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A005250E156C2BB269AB10005BCD4F63 /* ViewModel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0592CA376E5AEA62FC8D1E7A44FFE4F /* Service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B6E81C24B257473996169D3666B23 /* Service.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C3C42E81EDE98ADD5FAB50C030739EED /* AbsintheUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDEF70DE65E9014C3AD1028FEA9E3D35 /* AbsintheUI.framework */; };
 		C4D58FE00A35E0D40FE5E8B78672FD12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06A90E9A8146DAC826FB87B28D77C4EA /* LaunchScreen.storyboard */; };
 		CB4A99E53437F0583CBA994DC86761FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C05FBFB2F0E22EAEBC5B98099D5F485E /* Assets.xcassets */; };
 		DD8288EAAFFE1103849611C99A0AE32C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E1AC6A5196ECAB6164CB942671ECCD /* AppDelegate.swift */; };
 		EA4AB537502AF484777C5D68DA223D4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1007ACA488EF5710B4C1079CD3DE93 /* SceneDelegate.swift */; };
 		EE0F511C02F7315E0820F4615A8B6E97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61AE282D25D0052E1DE19229D1498BBB /* ViewController.swift */; };
+		F304A102A17FE873FCD71E1E0422748D /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC0B6E81C24B257473996169D3666B23 /* Service.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E775594C22C86F6BF04C3BCE4AACBEDD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6FD1D1AFA7B7E24DBD52AF306F734131 /* AbsintheUI.framework in Embed Frameworks */,
+				B0592CA376E5AEA62FC8D1E7A44FFE4F /* Service.framework in Embed Frameworks */,
+				AF65EF4FD70BB38EB47519D6A12E2CDE /* ViewModel.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D28A5E8916CA699B5E60E5B67BC24A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2AF76B4FB3E16FB0324C3483FB8B09CD /* libPods-Absinthe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Absinthe.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B27721241F38E409AE92DEEF2567F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61AE282D25D0052E1DE19229D1498BBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77FA215D75EEF119F3D7FBF874D00113 /* Absinthe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Absinthe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92664885186869CC243FFE25B22A3EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A005250E156C2BB269AB10005BCD4F63 /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7DAA7D856DA60EA1826336390B3D794 /* Pods_Absinthe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Absinthe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC0B6E81C24B257473996169D3666B23 /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05FBFB2F0E22EAEBC5B98099D5F485E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C18DCE9D39626A293046F90C4671F2DF /* Pods-Absinthe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absinthe.release.xcconfig"; path = "Target Support Files/Pods-Absinthe/Pods-Absinthe.release.xcconfig"; sourceTree = "<group>"; };
 		DD1007ACA488EF5710B4C1079CD3DE93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E7E1AC6A5196ECAB6164CB942671ECCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EDEF70DE65E9014C3AD1028FEA9E3D35 /* AbsintheUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AbsintheUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34DD3AE0C69AEB796317585DD2A519A /* Pods-Absinthe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absinthe.debug.xcconfig"; path = "Target Support Files/Pods-Absinthe/Pods-Absinthe.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,13 +60,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27D8FC1DA429F9223CD20EF8F970D9EC /* libPods-Absinthe.a in Frameworks */,
+				C3C42E81EDE98ADD5FAB50C030739EED /* AbsintheUI.framework in Frameworks */,
+				7915CFE32F60BED360645E150A414EC0 /* Pods_Absinthe.framework in Frameworks */,
+				F304A102A17FE873FCD71E1E0422748D /* Service.framework in Frameworks */,
+				691097229BD06580541E2C4C45139C6C /* ViewModel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BDD42BF0C4849D9FE0F581154D01ADE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EDEF70DE65E9014C3AD1028FEA9E3D35 /* AbsintheUI.framework */,
+				B7DAA7D856DA60EA1826336390B3D794 /* Pods_Absinthe.framework */,
+				BC0B6E81C24B257473996169D3666B23 /* Service.framework */,
+				A005250E156C2BB269AB10005BCD4F63 /* ViewModel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		427A102ED22D635C5E0B3C22C7B12029 /* Absinthe */ = {
 			isa = PBXGroup;
 			children = (
@@ -62,14 +101,6 @@
 				77FA215D75EEF119F3D7FBF874D00113 /* Absinthe.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		3BDD42BF0C4849D9FE0F581154D01ADE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2AF76B4FB3E16FB0324C3483FB8B09CD /* libPods-Absinthe.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E05015B24413FA806B1D1CCABA6936CB = {
@@ -102,6 +133,8 @@
 				4477EE3C59423984900F71B1E3FE066D /* Sources */,
 				AC7A02DE187FC83D9C667E5C6CE784EF /* Frameworks */,
 				86A1FFB08F8BEE23FA195C905A21A909 /* Resources */,
+				3218ECFEBF13F2BCCC15174EFCCBA047 /* [CP] Embed Pods Frameworks */,
+				E775594C22C86F6BF04C3BCE4AACBEDD /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -159,6 +192,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3218ECFEBF13F2BCCC15174EFCCBA047 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Absinthe/Pods-Absinthe-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Absinthe/Pods-Absinthe-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Absinthe/Pods-Absinthe-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		DB0928C7E933BCACCE14E291A87A681C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
