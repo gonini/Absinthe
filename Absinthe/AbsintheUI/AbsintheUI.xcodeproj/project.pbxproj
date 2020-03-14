@@ -7,72 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		036CA38F968FCA4D6F21F1E42CE7083F /* Pods_AbsintheUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE951B55E09F0F2277D5CB5EC8CC107 /* Pods_AbsintheUI.framework */; };
-		0E1D2A20ECF995538CE1C2D870353A69 /* AbsintheUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 03D9EC6C555962E0546B45BF443F9731 /* AbsintheUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A07F8EB2380FB027C1AAA45CE9CD4912 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B80488312D9D5A31D914E1006D303F /* MainViewController.swift */; };
+		BF20E3912FC196E2968033EB5D957A53 /* Pods_AbsintheUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05F1C78DE430F31D571293F092CE8DE /* Pods_AbsintheUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		03D9EC6C555962E0546B45BF443F9731 /* AbsintheUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbsintheUI.h; sourceTree = "<group>"; };
-		2DE951B55E09F0F2277D5CB5EC8CC107 /* Pods_AbsintheUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbsintheUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		52186EE81800C80AB76F0A7C72D62B84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9172B575F38B8E17B3199A4BF5D00DE1 /* Pods-AbsintheUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsintheUI.debug.xcconfig"; path = "Target Support Files/Pods-AbsintheUI/Pods-AbsintheUI.debug.xcconfig"; sourceTree = "<group>"; };
-		A495CF2625F6EAF9B9477DC36E4F9F9D /* AbsintheUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsintheUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF20E4FBF3EB2F028B2EF42EF2D0AD35 /* Pods-AbsintheUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsintheUI.release.xcconfig"; path = "Target Support Files/Pods-AbsintheUI/Pods-AbsintheUI.release.xcconfig"; sourceTree = "<group>"; };
+		489564391912A92C88E1DBCF5D496E37 /* AbsintheUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AbsintheUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D01F382E04E8BFFA468BF0148303C1C /* Pods-AbsintheUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsintheUI.release.xcconfig"; path = "Target Support Files/Pods-AbsintheUI/Pods-AbsintheUI.release.xcconfig"; sourceTree = "<group>"; };
+		B05F1C78DE430F31D571293F092CE8DE /* Pods_AbsintheUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbsintheUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B80488312D9D5A31D914E1006D303F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C2AA9BA7A8CB7E8852CCC1E7C12B2C7D /* Pods-AbsintheUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsintheUI.debug.xcconfig"; path = "Target Support Files/Pods-AbsintheUI/Pods-AbsintheUI.debug.xcconfig"; sourceTree = "<group>"; };
+		F645F6DDC008BC5377944C3F469916F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		788709EFE7640D2977A96D8323AE5523 /* Frameworks */ = {
+		76F5286006C19B8D40353093BD9BB258 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				036CA38F968FCA4D6F21F1E42CE7083F /* Pods_AbsintheUI.framework in Frameworks */,
+				BF20E3912FC196E2968033EB5D957A53 /* Pods_AbsintheUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A106B9FE2816B25C8497C3BC7E3919C /* AbsintheUI */ = {
+		9CFCC8F96A66EFFF238471E652EE5028 = {
 			isa = PBXGroup;
 			children = (
-				03D9EC6C555962E0546B45BF443F9731 /* AbsintheUI.h */,
-				52186EE81800C80AB76F0A7C72D62B84 /* Info.plist */,
+				71A947AD161EE96187618EBAD78ED39A /* AbsintheUI */,
+				3BB1476CE16AB291049D91DDB7317DE2 /* Frameworks */,
+				749DF28291A749AD903A11804522517E /* Pods */,
+				9D2C36FB4810A8E3F479A349FE65489D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D2C36FB4810A8E3F479A349FE65489D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				489564391912A92C88E1DBCF5D496E37 /* AbsintheUI.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71A947AD161EE96187618EBAD78ED39A /* AbsintheUI */ = {
+			isa = PBXGroup;
+			children = (
+				F645F6DDC008BC5377944C3F469916F0 /* Info.plist */,
+				B0B80488312D9D5A31D914E1006D303F /* MainViewController.swift */,
 			);
 			path = AbsintheUI;
 			sourceTree = "<group>";
 		};
-		5EF61F529B48610874EE5484AEF997BC /* Pods */ = {
+		749DF28291A749AD903A11804522517E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9172B575F38B8E17B3199A4BF5D00DE1 /* Pods-AbsintheUI.debug.xcconfig */,
-				FF20E4FBF3EB2F028B2EF42EF2D0AD35 /* Pods-AbsintheUI.release.xcconfig */,
+				C2AA9BA7A8CB7E8852CCC1E7C12B2C7D /* Pods-AbsintheUI.debug.xcconfig */,
+				9D01F382E04E8BFFA468BF0148303C1C /* Pods-AbsintheUI.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
-		2F85C3A43247B6ED05175F500D1D59FE = {
+		3BB1476CE16AB291049D91DDB7317DE2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5A106B9FE2816B25C8497C3BC7E3919C /* AbsintheUI */,
-				71F94653A4021F9153A0A80750DD1433 /* Frameworks */,
-				5EF61F529B48610874EE5484AEF997BC /* Pods */,
-				368F4DF4484629ADAE6BFF85CD336E00 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		368F4DF4484629ADAE6BFF85CD336E00 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A495CF2625F6EAF9B9477DC36E4F9F9D /* AbsintheUI.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		71F94653A4021F9153A0A80750DD1433 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2DE951B55E09F0F2277D5CB5EC8CC107 /* Pods_AbsintheUI.framework */,
+				B05F1C78DE430F31D571293F092CE8DE /* Pods_AbsintheUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,26 +80,25 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9DA3EA717F162B5BC081EE0F4676558D /* Headers */ = {
+		16D1662F54803DA712ADC27661A9B1FA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E1D2A20ECF995538CE1C2D870353A69 /* AbsintheUI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BB55EE014E1357AB4CA7F0732B06E1DB /* AbsintheUI */ = {
+		3D738E92D7884ACF40A78D3DC1DC33F6 /* AbsintheUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4D48D123A0BB6B5E710D186094FA0AE /* Build configuration list for PBXNativeTarget "AbsintheUI" */;
+			buildConfigurationList = F138DF8B402E1FAB60ED84507471A934 /* Build configuration list for PBXNativeTarget "AbsintheUI" */;
 			buildPhases = (
-				BABD9D2A6F2E04331C42C581D3824072 /* [CP] Check Pods Manifest.lock */,
-				9DA3EA717F162B5BC081EE0F4676558D /* Headers */,
-				79424BE519E4416A849ED1AF11101525 /* Sources */,
-				788709EFE7640D2977A96D8323AE5523 /* Frameworks */,
-				C50D5B9DF37B08FCBD28FF43DB5CAEB8 /* Resources */,
+				B8E12CA1C73D9BF9A1159B961C28EA6E /* [CP] Check Pods Manifest.lock */,
+				16D1662F54803DA712ADC27661A9B1FA /* Headers */,
+				7A95EE34A002AC177E303E111F76B3DA /* Sources */,
+				76F5286006C19B8D40353093BD9BB258 /* Frameworks */,
+				F4B6BAD46602F4A87E81E9E1BD95FA3C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -107,24 +106,25 @@
 			);
 			name = AbsintheUI;
 			productName = AbsintheUI;
-			productReference = A495CF2625F6EAF9B9477DC36E4F9F9D /* AbsintheUI.framework */;
+			productReference = 489564391912A92C88E1DBCF5D496E37 /* AbsintheUI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A43290393DBC7670E8822C4F080FB1EF /* Project object */ = {
+		DEA6637A74CE97971D34165702F9C6B7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = gonisoft;
 				TargetAttributes = {
-					BB55EE014E1357AB4CA7F0732B06E1DB = {
+					3D738E92D7884ACF40A78D3DC1DC33F6 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
-			buildConfigurationList = 55F4455B166E6B6A19A8E5EB10E0B4F7 /* Build configuration list for PBXProject "AbsintheUi" */;
+			buildConfigurationList = 5151DFBA9D00A3A4AEFD88E0441BA5D1 /* Build configuration list for PBXProject "AbsintheUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,18 +132,18 @@
 				en,
 				Base,
 			);
-			mainGroup = 2F85C3A43247B6ED05175F500D1D59FE;
-			productRefGroup = 368F4DF4484629ADAE6BFF85CD336E00 /* Products */;
+			mainGroup = 9CFCC8F96A66EFFF238471E652EE5028;
+			productRefGroup = 9D2C36FB4810A8E3F479A349FE65489D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BB55EE014E1357AB4CA7F0732B06E1DB /* AbsintheUI */,
+				3D738E92D7884ACF40A78D3DC1DC33F6 /* AbsintheUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C50D5B9DF37B08FCBD28FF43DB5CAEB8 /* Resources */ = {
+		F4B6BAD46602F4A87E81E9E1BD95FA3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -153,7 +153,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		BABD9D2A6F2E04331C42C581D3824072 /* [CP] Check Pods Manifest.lock */ = {
+		B8E12CA1C73D9BF9A1159B961C28EA6E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -178,124 +178,18 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		79424BE519E4416A849ED1AF11101525 /* Sources */ = {
+		7A95EE34A002AC177E303E111F76B3DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07F8EB2380FB027C1AAA45CE9CD4912 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		E5D558D9AC5EEA78522806CC19D68C94 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9172B575F38B8E17B3199A4BF5D00DE1 /* Pods-AbsintheUI.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5ELQH5H3HB;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AbsintheUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gonisoft.AbsintheUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		CA0CC36D9B1CE3BC8E9C262B8A79A418 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		DDFC76EF0B54C88408137A5735852DDD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF20E4FBF3EB2F028B2EF42EF2D0AD35 /* Pods-AbsintheUI.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 5ELQH5H3HB;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AbsintheUI/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gonisoft.AbsintheUI;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		0BBE46BCE4C05A405D646391D07F62A7 /* Debug */ = {
+		65E58CA68640CDDD915EFB1FD75A023D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -358,28 +252,138 @@
 			};
 			name = Debug;
 		};
+		2D3BB06B20971B00DFEE69A299018EF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		62BEBB6B085B85D5ECA54B04B7460915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D01F382E04E8BFFA468BF0148303C1C /* Pods-AbsintheUI.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5ELQH5H3HB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AbsintheUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonisoft.AbsintheUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0BB72E93EBC509769ED40B7A6125260B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2AA9BA7A8CB7E8852CCC1E7C12B2C7D /* Pods-AbsintheUI.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5ELQH5H3HB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AbsintheUI/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gonisoft.AbsintheUI;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		55F4455B166E6B6A19A8E5EB10E0B4F7 /* Build configuration list for PBXProject "AbsintheUi" */ = {
+		5151DFBA9D00A3A4AEFD88E0441BA5D1 /* Build configuration list for PBXProject "AbsintheUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BBE46BCE4C05A405D646391D07F62A7 /* Debug */,
-				CA0CC36D9B1CE3BC8E9C262B8A79A418 /* Release */,
+				65E58CA68640CDDD915EFB1FD75A023D /* Debug */,
+				2D3BB06B20971B00DFEE69A299018EF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4D48D123A0BB6B5E710D186094FA0AE /* Build configuration list for PBXNativeTarget "AbsintheUI" */ = {
+		F138DF8B402E1FAB60ED84507471A934 /* Build configuration list for PBXNativeTarget "AbsintheUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E5D558D9AC5EEA78522806CC19D68C94 /* Debug */,
-				DDFC76EF0B54C88408137A5735852DDD /* Release */,
+				0BB72E93EBC509769ED40B7A6125260B /* Debug */,
+				62BEBB6B085B85D5ECA54B04B7460915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A43290393DBC7670E8822C4F080FB1EF /* Project object */;
+	rootObject = DEA6637A74CE97971D34165702F9C6B7 /* Project object */;
 }
