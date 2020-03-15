@@ -18,4 +18,8 @@ extension UIColor {
     return UIColor(white: 1.0, alpha: 1.0)
   }
 
+  @nonobjc class var background: UIColor {
+    return UIColor(white: 28.0 / 255.0, alpha: 1.0)
+  }
+
 }
