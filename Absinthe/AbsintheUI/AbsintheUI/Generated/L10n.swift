@@ -16,6 +16,27 @@ internal enum L10n {
     /// for your personal data
     internal static let subTitle = L10n.tr("Localizable", "INTRO.SUB_TITLE")
   }
+
+  internal enum Permission {
+    /// 편리한 사용을 위해 아래 권한들이 필요합니다
+    internal static let pageGuide = L10n.tr("Localizable", "PERMISSION.PAGE_GUIDE")
+    /// 시작하기
+    internal static let startButton = L10n.tr("Localizable", "PERMISSION.START_BUTTON")
+    internal enum Item {
+      internal enum Notification {
+        /// 지정한 작업이 완료되면 알림을 받을 수 있습니다
+        internal static let info = L10n.tr("Localizable", "PERMISSION.ITEM.NOTIFICATION.INFO")
+        /// 알림
+        internal static let title = L10n.tr("Localizable", "PERMISSION.ITEM.NOTIFICATION.TITLE")
+      }
+      internal enum Picture {
+        /// 원하는 사진의 정보를 제거하거나 수정할 수 있습니다
+        internal static let info = L10n.tr("Localizable", "PERMISSION.ITEM.PICTURE.INFO")
+        /// 사진 읽기 및 쓰기
+        internal static let title = L10n.tr("Localizable", "PERMISSION.ITEM.PICTURE.TITLE")
+      }
+    }
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name
