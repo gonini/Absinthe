@@ -39,6 +39,11 @@ else
 fi
 
 echo ""
+__system "Run swiftgen  🏃‍♀️🏃‍♀️🏃‍♀️"
+  swiftgen
+__system "Done 🤟"
+
+echo ""
 cd ..
 __system "Run swiftlint  🏃‍♀️🏃‍♀️🏃‍♀️"
 if ! swiftlint --strict --quiet; then
