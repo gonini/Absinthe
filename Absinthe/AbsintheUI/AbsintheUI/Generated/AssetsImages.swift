@@ -19,6 +19,8 @@
 // swiftlint:disable identifier_name line_length nesting type_body_length type_name
 internal enum Asset {
   internal static let appTItle = ImageAsset(name: "appTItle")
+  internal static let notificaionPermissionIcon = ImageAsset(name: "notificaionPermissionIcon")
+  internal static let picturePermissonIcon = ImageAsset(name: "picturePermissonIcon")
 }
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
 
