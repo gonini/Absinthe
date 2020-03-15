@@ -9,7 +9,7 @@
 import UIKit
 import SnapKit
 
-final class IntroViewController: UIViewController {
+final public class IntroViewController: UIViewController {
     public init() {
         super.init(nibName: nil, bundle: nil)
     }
@@ -18,7 +18,7 @@ final class IntroViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
     }
@@ -26,6 +26,32 @@ final class IntroViewController: UIViewController {
 
 private extension IntroViewController {
     func setUp() {
+        view.backgroundColor = UIColor.background
 
+        let lineView = UIView()
+        lineView.backgroundColor = UIColor.white
+        view.addSubview(lineView)
+        lineView.snp.makeConstraints { maker in
+            maker.height.equalTo(1)
+            maker.width.equalToSuperview().multipliedBy(0.669)
+            maker.centerY.trailing.equalToSuperview()
+        }
+
+        let imageView = UIImageView(image: Asset.appTItle.image)
+        view.addSubview(imageView)
+        imageView.snp.makeConstraints { maker in
+            maker.bottom.equalTo(lineView.snp.top)
+            maker.leading.equalTo(lineView.snp.leading)
+        }
+
+        let subTitle = UILabel()
+        view.addSubview(subTitle)
+        subTitle.text = L10n.Intro.subTitle
+        subTitle.textColor = UIColor.white
+        subTitle.font = .systemFont(ofSize: 15, weight: .bold)
+        subTitle.snp.makeConstraints { (maker) in
+            maker.trailing.equalToSuperview().inset(20)
+            maker.top.equalTo(lineView.snp.bottom).offset(6)
+        }
     }
 }

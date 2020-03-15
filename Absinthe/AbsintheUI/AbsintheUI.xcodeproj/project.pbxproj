@@ -13,7 +13,6 @@
 		76211D100ECE77EB9B69F10DF34B4BAE /* PermissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06BADE8FE72E86D317A8A659159A03 /* PermissionViewController.swift */; };
 		96B890715CF1C6C0694CB9206CCBD484 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B349E517DF00D20F9FAF64EB660D8866 /* Localizable.strings */; };
 		97A3323EA59C1850642559ED4D6A7C29 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F5C0ABC0D8666AF57D94B8A44332732 /* IntroViewController.swift */; };
-		A07F8EB2380FB027C1AAA45CE9CD4912 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0B80488312D9D5A31D914E1006D303F /* MainViewController.swift */; };
 		BF20E3912FC196E2968033EB5D957A53 /* Pods_AbsintheUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05F1C78DE430F31D571293F092CE8DE /* Pods_AbsintheUI.framework */; };
 		DE326D162E0CDE3FF148CE3BD5F22430 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFF110D2717DA3C3B0A44856772E293 /* L10n.swift */; };
 /* End PBXBuildFile section */
@@ -28,7 +27,6 @@
 		8DFF110D2717DA3C3B0A44856772E293 /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		9D01F382E04E8BFFA468BF0148303C1C /* Pods-AbsintheUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsintheUI.release.xcconfig"; path = "Target Support Files/Pods-AbsintheUI/Pods-AbsintheUI.release.xcconfig"; sourceTree = "<group>"; };
 		B05F1C78DE430F31D571293F092CE8DE /* Pods_AbsintheUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AbsintheUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0B80488312D9D5A31D914E1006D303F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		C2AA9BA7A8CB7E8852CCC1E7C12B2C7D /* Pods-AbsintheUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AbsintheUI.debug.xcconfig"; path = "Target Support Files/Pods-AbsintheUI/Pods-AbsintheUI.debug.xcconfig"; sourceTree = "<group>"; };
 		DA6175CDC6CFFF6D5F19634BEDCCC7DD /* AssetsImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsImages.swift; sourceTree = "<group>"; };
 		EF06BADE8FE72E86D317A8A659159A03 /* PermissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 				C618FA579B264CB5C123B483656A6971 /* Resources */,
 				F645F6DDC008BC5377944C3F469916F0 /* Info.plist */,
 				0F5C0ABC0D8666AF57D94B8A44332732 /* IntroViewController.swift */,
-				B0B80488312D9D5A31D914E1006D303F /* MainViewController.swift */,
 				EF06BADE8FE72E86D317A8A659159A03 /* PermissionViewController.swift */,
 			);
 			path = AbsintheUI;
@@ -76,6 +73,15 @@
 			);
 			name = Pods;
 			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		7BE8ACE73341AD64DEA74995C9D58733 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				DA6175CDC6CFFF6D5F19634BEDCCC7DD /* AssetsImages.swift */,
+				8DFF110D2717DA3C3B0A44856772E293 /* L10n.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		9CFCC8F96A66EFFF238471E652EE5028 = {
@@ -94,15 +100,6 @@
 				489564391912A92C88E1DBCF5D496E37 /* AbsintheUI.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		7BE8ACE73341AD64DEA74995C9D58733 /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				DA6175CDC6CFFF6D5F19634BEDCCC7DD /* AssetsImages.swift */,
-				8DFF110D2717DA3C3B0A44856772E293 /* L10n.swift */,
-			);
-			path = Generated;
 			sourceTree = "<group>";
 		};
 		C618FA579B264CB5C123B483656A6971 /* Resources */ = {
@@ -227,7 +224,6 @@
 				21841C0412FC4A76C5318C25E1C150D7 /* Colors.swift in Sources */,
 				97A3323EA59C1850642559ED4D6A7C29 /* IntroViewController.swift in Sources */,
 				DE326D162E0CDE3FF148CE3BD5F22430 /* L10n.swift in Sources */,
-				A07F8EB2380FB027C1AAA45CE9CD4912 /* MainViewController.swift in Sources */,
 				76211D100ECE77EB9B69F10DF34B4BAE /* PermissionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

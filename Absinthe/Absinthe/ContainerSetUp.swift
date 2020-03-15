@@ -13,7 +13,7 @@ import Swinject
 extension AppDelegate {
     func createContainer() -> Container {
         let container = Container()
-        container.register(MainViewController.self) { _ in MainViewController() }
+        container.register(IntroViewController.self) { _ in IntroViewController() }
         return container
     }
 }
