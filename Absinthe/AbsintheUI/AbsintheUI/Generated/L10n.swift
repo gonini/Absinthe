@@ -11,6 +11,11 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
+
+  internal enum Intro {
+    /// for your personal data
+    internal static let subTitle = L10n.tr("Localizable", "INTRO.SUB_TITLE")
+  }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name
