@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "711679CCEE13D9FFDC4476950B2F9B0A"
-               BuildableName = "Absinthe.app"
+               BuildableName = "Safe Picture.app"
                BlueprintName = "Absinthe"
                ReferencedContainer = "container:Absinthe.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "711679CCEE13D9FFDC4476950B2F9B0A"
-            BuildableName = "Absinthe.app"
+            BuildableName = "Safe Picture.app"
             BlueprintName = "Absinthe"
             ReferencedContainer = "container:Absinthe.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "711679CCEE13D9FFDC4476950B2F9B0A"
-            BuildableName = "Absinthe.app"
+            BuildableName = "Safe Picture.app"
             BlueprintName = "Absinthe"
             ReferencedContainer = "container:Absinthe.xcodeproj">
          </BuildableReference>
