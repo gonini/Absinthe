@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import ViewModel
+import RxSwift
+import RxCocoa
+import ReactorKit
 import SnapKit
 
-final public class PermissionViewController: UIViewController {
+final public class PermissionViewController: UIViewController, View {
+    public typealias Reactor = PermissionViewReactor
+
     private let startButton = UIButton()
 
-    public init() {
+    public var disposeBag = DisposeBag()
+
+    public init(reactor: Reactor) {
+        defer { self.reactor = reactor }
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -23,6 +32,40 @@ final public class PermissionViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+    }
+
+    public func bind(reactor: Reactor) {
+        reactor.event
+            .subscribe(onNext: { [weak self] (event) in
+                guard let ss = self else { return }
+                switch event {
+                case .goToSetting(let deniedPermissionType):
+                    ss.showGoToSettingAlert(deniedPermissionType: deniedPermissionType)
+                case .goToMain:
+                    // 메인으로 가도록 수정
+                    break
+                }
+            })
+            .disposed(by: disposeBag)
+
+        startButton.rx.tap
+            .throttle(.milliseconds(500), scheduler: MainScheduler.instance)
+            .map { _ in Reactor.Action.tapContinue }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
+
+    private func showGoToSettingAlert(deniedPermissionType: DeniedPermissionType) {
+        let alert = UIAlertController(
+            title: L10n.Permission.GoToSettingAlert.title(deniedPermissionType.name),
+            message: L10n.Permission.GoToSettingAlert.message,
+            preferredStyle: UIAlertController.Style.alert
+        )
+        alert.addAction(UIAlertAction(title: L10n.Permission.GoToSettingAlert.ok, style: .default, handler: { (action: UIAlertAction!) in
+              UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!)
+        }))
+        alert.addAction(UIAlertAction(title: L10n.Permission.GoToSettingAlert.cancel, style: .cancel))
+        present(alert, animated: true, completion: nil)
     }
 }
 
