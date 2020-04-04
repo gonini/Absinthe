@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		649885410651F2E028C6899B011243CB /* Service.h in Headers */ = {isa = PBXBuildFile; fileRef = 54F0FF0844A5A30476AD19A71DC2B3A7 /* Service.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72816A037DC39EC1D3C16509CF23D851 /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523B080E15DC04CC1FE67670F056FE5D /* PermissionService.swift */; };
 		D677E9CFF7C7C73064150219FBD7E750 /* Pods_Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 16B95AE51EC6EF364D28298E6906C262 /* Pods_Service.framework */; };
 /* End PBXBuildFile section */
 
@@ -15,6 +16,7 @@
 		0CDED40FAD64FAAA96511A85CE097BDA /* Pods-Service.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service.debug.xcconfig"; path = "Target Support Files/Pods-Service/Pods-Service.debug.xcconfig"; sourceTree = "<group>"; };
 		0FC65A89A323D8CD1BD0B23D0E37F428 /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16B95AE51EC6EF364D28298E6906C262 /* Pods_Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		523B080E15DC04CC1FE67670F056FE5D /* PermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionService.swift; sourceTree = "<group>"; };
 		54F0FF0844A5A30476AD19A71DC2B3A7 /* Service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
 		93CE06EEB8B7068DDE6671CB5E7B04E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB41A3E4AB0D5B4AF0DD1F91C558E542 /* Pods-Service.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Service.release.xcconfig"; path = "Target Support Files/Pods-Service/Pods-Service.release.xcconfig"; sourceTree = "<group>"; };
@@ -44,19 +46,10 @@
 			isa = PBXGroup;
 			children = (
 				93CE06EEB8B7068DDE6671CB5E7B04E5 /* Info.plist */,
+				523B080E15DC04CC1FE67670F056FE5D /* PermissionService.swift */,
 				54F0FF0844A5A30476AD19A71DC2B3A7 /* Service.h */,
 			);
 			path = Service;
-			sourceTree = "<group>";
-		};
-		947A35060CBCA9B5F67EAA1DDC117204 = {
-			isa = PBXGroup;
-			children = (
-				7F87B5E1EC1063F2DB5291DB231B4DB7 /* Frameworks */,
-				6FDC016D415C949412623EF0E393AAFC /* Pods */,
-				152CFB29FBFEEB93471611743DDF36A6 /* Products */,
-				17E6FDF22487181528C23A3415AA5D51 /* Service */,
-			);
 			sourceTree = "<group>";
 		};
 		6FDC016D415C949412623EF0E393AAFC /* Pods */ = {
@@ -75,6 +68,16 @@
 				16B95AE51EC6EF364D28298E6906C262 /* Pods_Service.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		947A35060CBCA9B5F67EAA1DDC117204 = {
+			isa = PBXGroup;
+			children = (
+				7F87B5E1EC1063F2DB5291DB231B4DB7 /* Frameworks */,
+				6FDC016D415C949412623EF0E393AAFC /* Pods */,
+				152CFB29FBFEEB93471611743DDF36A6 /* Products */,
+				17E6FDF22487181528C23A3415AA5D51 /* Service */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +124,7 @@
 				TargetAttributes = {
 					77736B9F9242F7ADA1134583D14E692F = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -182,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72816A037DC39EC1D3C16509CF23D851 /* PermissionService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +260,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0CDED40FAD64FAAA96511A85CE097BDA /* Pods-Service.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5ELQH5H3HB;
@@ -271,6 +277,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.gonisoft.Service;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -337,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB41A3E4AB0D5B4AF0DD1F91C558E542 /* Pods-Service.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5ELQH5H3HB;
