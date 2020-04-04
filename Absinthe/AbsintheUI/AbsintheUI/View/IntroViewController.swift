@@ -8,9 +8,18 @@
 
 import UIKit
 import SnapKit
+import ReactorKit
+import RxCocoa
+import RxSwift
+import ViewModel
 
-final public class IntroViewController: UIViewController {
-    public init() {
+final public class IntroViewController: UIViewController, View {
+    public typealias Reactor = IntroViewReactor
+
+    public var disposeBag = DisposeBag()
+
+    public init(reactor: Reactor) {
+        defer { self.reactor = reactor }
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -21,6 +30,22 @@ final public class IntroViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+    }
+
+    public func bind(reactor: Reactor) {
+        reactor.event
+            .subscribe(onNext: { [weak self] (event) in
+                guard let ss = self else { return }
+                switch event {
+                case .goToPermission:
+                    // 권한 페이지로 가도록 수정
+                    break
+                case .goToMain:
+                    // 메인으로 가도록 수정
+                    break
+                }
+            })
+            .disposed(by: disposeBag)
     }
 }
 
