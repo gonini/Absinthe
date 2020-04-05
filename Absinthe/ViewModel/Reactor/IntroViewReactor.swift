@@ -7,17 +7,11 @@
 //
 
 import Foundation
-import Service
 import ReactorKit
 import RxSwift
 
 public final class IntroViewReactor: Reactor {
-    public var initialState: State
-
-    public enum Event {
-        case goToPermission
-        case goToMain
-    }
+    public var initialState = State()
 
     public enum Action {
         case checkPermission
@@ -27,26 +21,24 @@ public final class IntroViewReactor: Reactor {
 
     public struct State {}
 
-    public var event: Observable<Event> {
-        return eventSubject.asObservable()
-    }
-
-    private let eventSubject = PublishSubject<Event>()
-
     private let permissionService: PermissionServiceType
+    private let presenter: PresenterType
 
-    public init(permissionService: PermissionServiceType) {
-        initialState = State()
+    public init(
+        permissionService: PermissionServiceType,
+        presenter: PresenterType
+    ) {
         self.permissionService = permissionService
+        self.presenter = presenter
     }
 
     public func mutate(action: Action) -> Observable<Mutation> {
         switch action {
             case .checkPermission:
-                return permissionService.hasPermission(types: PermissionType.requiredPermissions)
-                    .do(onSuccess: { [weak eventSubject] hasPermission in
-                        let event: Event = hasPermission ? .goToMain : .goToPermission
-                        eventSubject?.onNext(event)
+                return permissionService.hasPermissions(types: PermissionType.requiredPermissions)
+                    .do(onSuccess: { [weak presenter] hasPermission in
+                        let scene: Scene = hasPermission ? .gallery : .permission
+                        presenter?.present(scene: scene)
                     })
                     .asObservable()
                     .flatMap { _ in Observable<Mutation>.empty() }

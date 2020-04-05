@@ -7,8 +7,9 @@
 //
 
 import UIKit
-import AbsintheUI
 import Swinject
+import AbsintheUI
+import ViewModel
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -19,14 +20,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow(frame: UIScreen.main.bounds)
-//        window?.rootViewController = container.resolve(IntroViewController.self)
-
-        window?.rootViewController = container.resolve(PermissionViewController.self)
+        let presenter = container.resolve(Presenter.self)!
+        let introViewController = container.resolve(IntroViewController.self)
+        presenter.rootViewController = introViewController
+        window?.rootViewController = introViewController
         window?.makeKeyAndVisible()
         return true
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        let goni = "11"
     }
 }

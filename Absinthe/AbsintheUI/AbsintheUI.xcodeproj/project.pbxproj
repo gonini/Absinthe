@@ -12,6 +12,7 @@
 		2118C359F7B4E5D71AA9939B52E3D5FC /* AssetsImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6175CDC6CFFF6D5F19634BEDCCC7DD /* AssetsImages.swift */; };
 		21841C0412FC4A76C5318C25E1C150D7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106D33F755D8217C1DE023D34C9966B0 /* Colors.swift */; };
 		4C66339D32043A19F5C37DC68146E828 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E17EA8939F5D49212D9FD7450FC621 /* IntroViewController.swift */; };
+		60A91E9567B7F68510B3FD9487FED220 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E725E56347A97379985E465E9105240 /* GalleryViewController.swift */; };
 		6EFE9CEE4E1BBC3C2DB21A8B9DB3F68F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81A05E32E31D7A68EF16D06F367BDC00 /* Assets.xcassets */; };
 		96B890715CF1C6C0694CB9206CCBD484 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B349E517DF00D20F9FAF64EB660D8866 /* Localizable.strings */; };
 		97DF1E426F4CC6AC76EE6950750E80AC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2EC7B3B06E458FD51D72984A85BBE89 /* UIColor+.swift */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		08E73DD07520C7599FA025BA5D56BAFA /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		0E725E56347A97379985E465E9105240 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		106D33F755D8217C1DE023D34C9966B0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		30E17EA8939F5D49212D9FD7450FC621 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		33CF16383A583EE6F7DB5E168E5BA51A /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
@@ -76,6 +78,26 @@
 				70902BBE509F49FAADB20185A826F295 /* ViewModel.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		414A4C8C7B2746E07158A161C042AF74 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A2EC7B3B06E458FD51D72984A85BBE89 /* UIColor+.swift */,
+				33CF16383A583EE6F7DB5E168E5BA51A /* UIImage+.swift */,
+				7164EBDF2D27C87A71272DDB26ADE311 /* ViewModel+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		63D611D9153F17767108CE6557A2A3E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E725E56347A97379985E465E9105240 /* GalleryViewController.swift */,
+				30E17EA8939F5D49212D9FD7450FC621 /* IntroViewController.swift */,
+				4972C523A093B9E99FF931CEBDE6FB16 /* PermissionViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		71A947AD161EE96187618EBAD78ED39A /* AbsintheUI */ = {
@@ -135,25 +157,6 @@
 				B349E517DF00D20F9FAF64EB660D8866 /* Localizable.strings */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		63D611D9153F17767108CE6557A2A3E1 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				30E17EA8939F5D49212D9FD7450FC621 /* IntroViewController.swift */,
-				4972C523A093B9E99FF931CEBDE6FB16 /* PermissionViewController.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		414A4C8C7B2746E07158A161C042AF74 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				A2EC7B3B06E458FD51D72984A85BBE89 /* UIColor+.swift */,
-				33CF16383A583EE6F7DB5E168E5BA51A /* UIImage+.swift */,
-				7164EBDF2D27C87A71272DDB26ADE311 /* ViewModel+.swift */,
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +270,7 @@
 			files = (
 				2118C359F7B4E5D71AA9939B52E3D5FC /* AssetsImages.swift in Sources */,
 				21841C0412FC4A76C5318C25E1C150D7 /* Colors.swift in Sources */,
+				60A91E9567B7F68510B3FD9487FED220 /* GalleryViewController.swift in Sources */,
 				4C66339D32043A19F5C37DC68146E828 /* IntroViewController.swift in Sources */,
 				DE326D162E0CDE3FF148CE3BD5F22430 /* L10n.swift in Sources */,
 				ADA742836426BD7B0B87DB301D7873E1 /* PermissionViewController.swift in Sources */,

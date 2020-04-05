@@ -7,36 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0837C45421CDFAACE35B2D3AE42900AF /* Service.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 44A3FA1E929475E2B70B066B76B090DB /* Service.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		1A6A94A855A4F102DEC18D48119B7FCC /* Service.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A3FA1E929475E2B70B066B76B090DB /* Service.framework */; platformFilter = ios; };
+		1CD82989CF8A5725CB7E5DC36898ED16 /* PermissionServiceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AC4D9BD4AA6318400A215D6346396F /* PermissionServiceType.swift */; };
+		48C6C21C610FB0924559BB26DF0114DF /* PermissionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3355AE6DBB9BF628F2322C79677E2351 /* PermissionType.swift */; };
+		671702DC31CDD52A251B905C4E58C1F1 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7339875321A3746393956380DEF761 /* Scene.swift */; };
+		855C3D3872EC251101556FC0E6378225 /* GalleryViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D883A6200724FFE83C4F64C17A834AD7 /* GalleryViewReactor.swift */; };
 		A096E14FBE746955CD64711487E6F9CB /* Pods_ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01BD5FC2BAB7CC4F303971EF379C5183 /* Pods_ViewModel.framework */; platformFilter = ios; };
-		A78DD4E6F6ED1E52A6ACFE557D587A8C /* PermissionViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B9FE0D477888A0FA21A6ED3F78F7892 /* PermissionViewReactor.swift */; };
-		FD0D492F73BA30BB6939ED4EE0CEB9F1 /* IntroViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02CE1EAB7EC8F63DF0106CF2A5BC7135 /* IntroViewReactor.swift */; };
+		AC4B08080166D5E045E92C151B833BE9 /* PresenterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F42DB225B2AE72637CB26ED6F86174 /* PresenterType.swift */; };
+		C9B0D9A1DC3F1B9D87D0CE9413149EFA /* AuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F658C58A7399A9ECCF756E732D20E489 /* AuthorizationStatus.swift */; };
+		CAFAAE7EADA422680A550721EF812BF3 /* IntroViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE5174E2837C8B26B72DBAB9F5BEAD /* IntroViewReactor.swift */; };
+		D9F5DA020FBC96B9D813E4D03AAD27ED /* PermissionViewReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875CC11D782EBE725B0F635D1D9541E4 /* PermissionViewReactor.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		9FFD4F9EE01B72FA98D96F63A2FCDCA1 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0837C45421CDFAACE35B2D3AE42900AF /* Service.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		01BD5FC2BAB7CC4F303971EF379C5183 /* Pods_ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02CE1EAB7EC8F63DF0106CF2A5BC7135 /* IntroViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewReactor.swift; sourceTree = "<group>"; };
-		1B9FE0D477888A0FA21A6ED3F78F7892 /* PermissionViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewReactor.swift; sourceTree = "<group>"; };
+		0B6DA2C4E47A49407668224221C9A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3355AE6DBB9BF628F2322C79677E2351 /* PermissionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionType.swift; sourceTree = "<group>"; };
 		44A3FA1E929475E2B70B066B76B090DB /* Service.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Service.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C4C6B4944A9E3C0F5DF7BC88488F9E6 /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		875CC11D782EBE725B0F635D1D9541E4 /* PermissionViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionViewReactor.swift; sourceTree = "<group>"; };
 		903034BE97A3D498EE10C319550C0067 /* Pods-ViewModel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewModel.debug.xcconfig"; path = "Target Support Files/Pods-ViewModel/Pods-ViewModel.debug.xcconfig"; sourceTree = "<group>"; };
-		96A81D4B6F66BE6B51051483C2EE8B22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90AC4D9BD4AA6318400A215D6346396F /* PermissionServiceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionServiceType.swift; sourceTree = "<group>"; };
+		9F7339875321A3746393956380DEF761 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		C0F42DB225B2AE72637CB26ED6F86174 /* PresenterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterType.swift; sourceTree = "<group>"; };
 		C30E076B481890C1B972BC77A418866A /* Pods-ViewModel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewModel.release.xcconfig"; path = "Target Support Files/Pods-ViewModel/Pods-ViewModel.release.xcconfig"; sourceTree = "<group>"; };
+		D883A6200724FFE83C4F64C17A834AD7 /* GalleryViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewReactor.swift; sourceTree = "<group>"; };
+		DDCE5174E2837C8B26B72DBAB9F5BEAD /* IntroViewReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewReactor.swift; sourceTree = "<group>"; };
+		F658C58A7399A9ECCF756E732D20E489 /* AuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,13 +41,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				A096E14FBE746955CD64711487E6F9CB /* Pods_ViewModel.framework in Frameworks */,
-				1A6A94A855A4F102DEC18D48119B7FCC /* Service.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A5090374870F8418DF23EE1C3B06FCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F658C58A7399A9ECCF756E732D20E489 /* AuthorizationStatus.swift */,
+				3355AE6DBB9BF628F2322C79677E2351 /* PermissionType.swift */,
+				C0F42DB225B2AE72637CB26ED6F86174 /* PresenterType.swift */,
+				9F7339875321A3746393956380DEF761 /* Scene.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		34E7D5A32D8715EACD022B8A84273919 /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				D883A6200724FFE83C4F64C17A834AD7 /* GalleryViewReactor.swift */,
+				0B6DA2C4E47A49407668224221C9A665 /* Info.plist */,
+				DDCE5174E2837C8B26B72DBAB9F5BEAD /* IntroViewReactor.swift */,
+				875CC11D782EBE725B0F635D1D9541E4 /* PermissionViewReactor.swift */,
+			);
+			path = Reactor;
+			sourceTree = "<group>";
+		};
 		50FC3842094700927A6713D8D059AB2A /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -74,9 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				B196AB5E2428EDC230A57AE656420601 /* Frameworks */,
+				2A5090374870F8418DF23EE1C3B06FCF /* Model */,
 				5F4B4897FA6E2058140721728D81AC59 /* Pods */,
 				50FC3842094700927A6713D8D059AB2A /* Products */,
-				B21D587392AC981125F0505B8E571C5E /* ViewModel */,
+				34E7D5A32D8715EACD022B8A84273919 /* Reactor */,
+				BB71A71DC096B2A765FADC8CE73342B2 /* ServiceProtocol */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,14 +108,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B21D587392AC981125F0505B8E571C5E /* ViewModel */ = {
+		BB71A71DC096B2A765FADC8CE73342B2 /* ServiceProtocol */ = {
 			isa = PBXGroup;
 			children = (
-				96A81D4B6F66BE6B51051483C2EE8B22 /* Info.plist */,
-				02CE1EAB7EC8F63DF0106CF2A5BC7135 /* IntroViewReactor.swift */,
-				1B9FE0D477888A0FA21A6ED3F78F7892 /* PermissionViewReactor.swift */,
+				90AC4D9BD4AA6318400A215D6346396F /* PermissionServiceType.swift */,
 			);
-			path = ViewModel;
+			name = ServiceProtocol;
+			path = ../ServiceProtocol;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,7 +139,6 @@
 				BB668C7AF51CA37370BC6379621E6055 /* Sources */,
 				E9157392768ADD2E9543522D6D41AD8B /* Frameworks */,
 				3CA5CCA3C29292141361863DF0B16503 /* Resources */,
-				9FFD4F9EE01B72FA98D96F63A2FCDCA1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,8 +222,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD0D492F73BA30BB6939ED4EE0CEB9F1 /* IntroViewReactor.swift in Sources */,
-				A78DD4E6F6ED1E52A6ACFE557D587A8C /* PermissionViewReactor.swift in Sources */,
+				C9B0D9A1DC3F1B9D87D0CE9413149EFA /* AuthorizationStatus.swift in Sources */,
+				855C3D3872EC251101556FC0E6378225 /* GalleryViewReactor.swift in Sources */,
+				CAFAAE7EADA422680A550721EF812BF3 /* IntroViewReactor.swift in Sources */,
+				1CD82989CF8A5725CB7E5DC36898ED16 /* PermissionServiceType.swift in Sources */,
+				48C6C21C610FB0924559BB26DF0114DF /* PermissionType.swift in Sources */,
+				D9F5DA020FBC96B9D813E4D03AAD27ED /* PermissionViewReactor.swift in Sources */,
+				AC4B08080166D5E045E92C151B833BE9 /* PresenterType.swift in Sources */,
+				671702DC31CDD52A251B905C4E58C1F1 /* Scene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +247,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViewModel/Info.plist;
+				INFOPLIST_FILE = Reactor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,7 +393,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = ViewModel/Info.plist;
+				INFOPLIST_FILE = Reactor/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -13,6 +13,7 @@ def absintheUIModulePods
   pod 'SnapKit', '~> 5.0.1'
   pod 'RxCocoa', '~> 5'
   pod 'SwiftGen', '~> 6.0'
+  pod 'RxAppState'
   pod 'ReactorKit'
 end
 

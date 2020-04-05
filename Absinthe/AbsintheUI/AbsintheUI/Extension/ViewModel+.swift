@@ -9,7 +9,7 @@
 import Foundation
 import ViewModel
 
-extension DeniedPermissionType {
+extension PermissionType {
     var name: String {
         switch self {
         case .notification:

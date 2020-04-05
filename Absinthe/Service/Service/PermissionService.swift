@@ -9,11 +9,7 @@
 import Photos
 import UserNotifications
 import RxSwift
-
-public protocol PermissionServiceType: class {
-    func requestPermissionIfNeeded(for permission: PermissionType) -> Single<AuthorizationStatus>
-    func hasPermission(types: [PermissionType]) -> Single<Bool>
-}
+import ViewModel
 
 public final class PermissionService: PermissionServiceType {
     public init() { }
@@ -27,7 +23,7 @@ public final class PermissionService: PermissionServiceType {
         }
     }
 
-    public func hasPermission(types: [PermissionType]) -> Single<Bool> {
+    public func hasPermissions(types: [PermissionType]) -> Single<Bool> {
         return Observable.from(types)
             .compactMap { [weak self] type -> Single<Bool> in
                 guard let ss = self else { return .just(false) }
@@ -96,22 +92,6 @@ public final class PermissionService: PermissionServiceType {
             return Disposables.create()
         }
     }
-}
-
-public enum PermissionType {
-    case photo
-    case notification
-}
-
-public extension PermissionType {
-    static var requiredPermissions: [PermissionType] {
-        return [.notification, .photo]
-    }
-}
-
-public enum AuthorizationStatus {
-    case authorized
-    case denied
 }
 
 extension AuthorizationStatus {

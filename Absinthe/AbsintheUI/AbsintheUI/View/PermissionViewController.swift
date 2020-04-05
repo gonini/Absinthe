@@ -7,11 +7,12 @@
 //
 
 import UIKit
-import ViewModel
-import RxSwift
-import RxCocoa
 import ReactorKit
+import RxAppState
+import RxCocoa
+import RxSwift
 import SnapKit
+import ViewModel
 
 final public class PermissionViewController: UIViewController, View {
     public typealias Reactor = PermissionViewReactor
@@ -29,22 +30,19 @@ final public class PermissionViewController: UIViewController, View {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-        setUp()
-    }
-
     public func bind(reactor: Reactor) {
         reactor.event
             .subscribe(onNext: { [weak self] (event) in
-                guard let ss = self else { return }
                 switch event {
-                case .goToSetting(let deniedPermissionType):
-                    ss.showGoToSettingAlert(deniedPermissionType: deniedPermissionType)
-                case .goToMain:
-                    // 메인으로 가도록 수정
-                    break
+                case .goToSetting(let deniedPermission):
+                    self?.showGoToSettingAlert(for: deniedPermission)
                 }
+            })
+            .disposed(by: disposeBag)
+
+        rx.viewDidLoad
+            .subscribe(onNext: { [weak self] _ in
+                self?.setUp()
             })
             .disposed(by: disposeBag)
 
@@ -55,9 +53,9 @@ final public class PermissionViewController: UIViewController, View {
             .disposed(by: disposeBag)
     }
 
-    private func showGoToSettingAlert(deniedPermissionType: DeniedPermissionType) {
+    private func showGoToSettingAlert(for deniedPermission: PermissionType) {
         let alert = UIAlertController(
-            title: L10n.Permission.GoToSettingAlert.title(deniedPermissionType.name),
+            title: L10n.Permission.GoToSettingAlert.title(deniedPermission.name),
             message: L10n.Permission.GoToSettingAlert.message,
             preferredStyle: UIAlertController.Style.alert
         )
