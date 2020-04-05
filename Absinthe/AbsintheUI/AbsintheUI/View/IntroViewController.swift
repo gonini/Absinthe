@@ -7,10 +7,11 @@
 //
 
 import UIKit
-import SnapKit
 import ReactorKit
+import RxAppState
 import RxCocoa
 import RxSwift
+import SnapKit
 import ViewModel
 
 final public class IntroViewController: UIViewController, View {
@@ -27,24 +28,18 @@ final public class IntroViewController: UIViewController, View {
         fatalError("init(coder:) has not been implemented")
     }
 
-    public override func viewDidLoad() {
-        super.viewDidLoad()
-        setUp()
-    }
-
     public func bind(reactor: Reactor) {
-        reactor.event
-            .subscribe(onNext: { [weak self] (event) in
-                guard let ss = self else { return }
-                switch event {
-                case .goToPermission:
-                    // 권한 페이지로 가도록 수정
-                    break
-                case .goToMain:
-                    // 메인으로 가도록 수정
-                    break
-                }
+        rx.viewDidLoad
+            .subscribe(onNext: { [weak self] _ in
+                self?.setUp()
             })
+            .disposed(by: disposeBag)
+
+        rx.viewDidAppear
+            .take(1)
+            .delay(.milliseconds(800), scheduler: MainScheduler.instance)
+            .map { _ in Reactor.Action.checkPermission }
+            .bind(to: reactor.action)
             .disposed(by: disposeBag)
     }
 }

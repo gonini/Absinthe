@@ -7,23 +7,18 @@
 //
 
 import Foundation
-import Service
 import ReactorKit
 import RxSwift
 
 public final class PermissionViewReactor: Reactor {
-    public var initialState: State
+    public var initialState = State()
 
     public enum Event {
-        case goToSetting(DeniedPermissionType)
-        case goToMain
+        case goToSetting(deniedPermission: PermissionType)
     }
 
     public enum Action {
         case tapContinue
-    }
-
-    public enum Mutation {
     }
 
     public struct State {
@@ -36,25 +31,28 @@ public final class PermissionViewReactor: Reactor {
     private let eventSubject = PublishSubject<Event>()
 
     private let permissionService: PermissionServiceType
+    private let presenter: PresenterType
 
-    public init(permissionService: PermissionServiceType) {
+    public init(
+        permissionService: PermissionServiceType,
+        presenter: PresenterType
+    ) {
         self.permissionService = permissionService
-        initialState = State()
+        self.presenter = presenter
     }
 
     public func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-
         case .tapContinue:
-            return permissionService.hasPermission(types: PermissionType.requiredPermissions)
+            return presentGallerySceneIfPermissionAuthorized()
                 .asObservable()
-                .flatMap { [weak self] hasPermission -> Observable<Mutation> in
+                .flatMap { [weak self] presented -> Observable<Mutation> in
                     guard let ss = self else { return .empty() }
-                    if hasPermission {
-                        ss.eventSubject.onNext(.goToMain)
-                        return .empty()
+                    if presented {
+                        return .never()
+                    } else {
+                        return ss.requestPermissionIfNeeded(permissions: PermissionType.requiredPermissions)
                     }
-                    return ss.requestPermissionIfNeeded(permissions: PermissionType.requiredPermissions)
                 }
         }
     }
@@ -63,39 +61,36 @@ public final class PermissionViewReactor: Reactor {
         return Observable.from(permissions)
             .concatMap { [weak permissionService] permissionType -> Observable<(AuthorizationStatus, PermissionType)> in
                 guard let permissionService = permissionService else {
-                    return .never()
+                    return .empty()
                 }
                 return permissionService.requestPermissionIfNeeded(for: permissionType)
                     .observeOn(MainScheduler.instance)
                     .map { ($0, permissionType) }
                     .asObservable()
             }
-            .concatMap { [weak eventSubject] (status, permissionType) -> Observable<Mutation> in
+            .concatMap { [weak self] (status, permissionType) -> Observable<Mutation> in
+                guard let ss = self else { return .empty() }
                 switch status {
                 case .authorized:
-                    return .empty()
+                    return ss.presentGallerySceneIfPermissionAuthorized()
+                        .asObservable()
+                        .flatMap { presented -> Observable<Mutation> in
+                            return presented ? .never() : .empty()
+                        }
                 case .denied:
-                    let deniedPermission = DeniedPermissionType(permissionType: permissionType)
-                    eventSubject?.onNext(.goToSetting(deniedPermission))
+                    ss.eventSubject.onNext(.goToSetting(deniedPermission: permissionType))
                     return .never()
                 }
             }
     }
-}
 
-public enum DeniedPermissionType {
-    case photo
-    case notification
-}
-
-private extension DeniedPermissionType {
-    init(permissionType: PermissionType) {
-        switch permissionType {
-        case .photo:
-            self = .photo
-        case .notification:
-            self = .notification
-        }
+    private func presentGallerySceneIfPermissionAuthorized() -> Single<Bool> {
+        return permissionService.hasPermissions(types: PermissionType.requiredPermissions)
+            .do(onSuccess: { [weak self] hasAllPermissions in
+                if hasAllPermissions {
+                    self?.presenter.present(scene: .gallery)
+                }
+            })
     }
 }
 
