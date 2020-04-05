@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		304DFDAB11588943050F33C943A60C16 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689B0AB1AB2884CDB6F71264706FBC2 /* Presenter.swift */; };
 		55B93A6AB1A9B65807EAD7F52138C671 /* ContainerSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172372356F31B60A9F218710853D262 /* ContainerSetUp.swift */; };
 		691097229BD06580541E2C4C45139C6C /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A005250E156C2BB269AB10005BCD4F63 /* ViewModel.framework */; };
 		6FD1D1AFA7B7E24DBD52AF306F734131 /* AbsintheUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDEF70DE65E9014C3AD1028FEA9E3D35 /* AbsintheUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		24BE0244A3DF638CC379F8B7606608EB /* Safe Picture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Picture.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2689B0AB1AB2884CDB6F71264706FBC2 /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		92664885186869CC243FFE25B22A3EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A005250E156C2BB269AB10005BCD4F63 /* ViewModel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ViewModel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7DAA7D856DA60EA1826336390B3D794 /* Pods_Absinthe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Absinthe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				C05FBFB2F0E22EAEBC5B98099D5F485E /* Assets.xcassets */,
 				C172372356F31B60A9F218710853D262 /* ContainerSetUp.swift */,
 				92664885186869CC243FFE25B22A3EC7 /* Info.plist */,
+				2689B0AB1AB2884CDB6F71264706FBC2 /* Presenter.swift */,
 			);
 			path = Absinthe;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 			files = (
 				DD8288EAAFFE1103849611C99A0AE32C /* AppDelegate.swift in Sources */,
 				55B93A6AB1A9B65807EAD7F52138C671 /* ContainerSetUp.swift in Sources */,
+				304DFDAB11588943050F33C943A60C16 /* Presenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
