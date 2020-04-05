@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05E36357C969FB1349524452196E98C1 /* AbsinthePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E5D9E899DAEB7C90FB834E5F6EBD75 /* AbsinthePolicy.swift */; };
 		304DFDAB11588943050F33C943A60C16 /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2689B0AB1AB2884CDB6F71264706FBC2 /* Presenter.swift */; };
 		55B93A6AB1A9B65807EAD7F52138C671 /* ContainerSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172372356F31B60A9F218710853D262 /* ContainerSetUp.swift */; };
 		691097229BD06580541E2C4C45139C6C /* ViewModel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A005250E156C2BB269AB10005BCD4F63 /* ViewModel.framework */; };
@@ -46,6 +47,7 @@
 		C05FBFB2F0E22EAEBC5B98099D5F485E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C172372356F31B60A9F218710853D262 /* ContainerSetUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerSetUp.swift; sourceTree = "<group>"; };
 		C18DCE9D39626A293046F90C4671F2DF /* Pods-Absinthe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absinthe.release.xcconfig"; path = "Target Support Files/Pods-Absinthe/Pods-Absinthe.release.xcconfig"; sourceTree = "<group>"; };
+		E1E5D9E899DAEB7C90FB834E5F6EBD75 /* AbsinthePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbsinthePolicy.swift; sourceTree = "<group>"; };
 		E7E1AC6A5196ECAB6164CB942671ECCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDEF70DE65E9014C3AD1028FEA9E3D35 /* AbsintheUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AbsintheUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34DD3AE0C69AEB796317585DD2A519A /* Pods-Absinthe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Absinthe.debug.xcconfig"; path = "Target Support Files/Pods-Absinthe/Pods-Absinthe.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 		427A102ED22D635C5E0B3C22C7B12029 /* Absinthe */ = {
 			isa = PBXGroup;
 			children = (
+				E1E5D9E899DAEB7C90FB834E5F6EBD75 /* AbsinthePolicy.swift */,
 				E7E1AC6A5196ECAB6164CB942671ECCD /* AppDelegate.swift */,
 				C05FBFB2F0E22EAEBC5B98099D5F485E /* Assets.xcassets */,
 				C172372356F31B60A9F218710853D262 /* ContainerSetUp.swift */,
@@ -231,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05E36357C969FB1349524452196E98C1 /* AbsinthePolicy.swift in Sources */,
 				DD8288EAAFFE1103849611C99A0AE32C /* AppDelegate.swift in Sources */,
 				55B93A6AB1A9B65807EAD7F52138C671 /* ContainerSetUp.swift in Sources */,
 				304DFDAB11588943050F33C943A60C16 /* Presenter.swift in Sources */,

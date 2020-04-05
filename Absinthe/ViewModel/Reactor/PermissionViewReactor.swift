@@ -30,13 +30,16 @@ public final class PermissionViewReactor: Reactor {
 
     private let eventSubject = PublishSubject<Event>()
 
+    private let requiredPermissions: [PermissionType]
     private let permissionService: PermissionServiceType
     private let presenter: PresenterType
 
     public init(
+        requiredPermissions: [PermissionType],
         permissionService: PermissionServiceType,
         presenter: PresenterType
     ) {
+        self.requiredPermissions = requiredPermissions
         self.permissionService = permissionService
         self.presenter = presenter
     }
@@ -51,7 +54,7 @@ public final class PermissionViewReactor: Reactor {
                     if presented {
                         return .never()
                     } else {
-                        return ss.requestPermissionIfNeeded(permissions: PermissionType.requiredPermissions)
+                        return ss.requestPermissionIfNeeded(permissions: ss.requiredPermissions)
                     }
                 }
         }
@@ -85,7 +88,7 @@ public final class PermissionViewReactor: Reactor {
     }
 
     private func presentGallerySceneIfPermissionAuthorized() -> Single<Bool> {
-        return permissionService.hasPermissions(types: PermissionType.requiredPermissions)
+        return permissionService.hasPermissions(types: requiredPermissions)
             .do(onSuccess: { [weak self] hasAllPermissions in
                 if hasAllPermissions {
                     self?.presenter.present(scene: .gallery)
