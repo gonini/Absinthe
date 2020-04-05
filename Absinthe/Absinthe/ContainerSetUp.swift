@@ -7,10 +7,10 @@
 //
 
 import Foundation
-import AbsintheUI
-import ViewModel
-import Service
 import Swinject
+import AbsintheUI
+import Service
+import ViewModel
 
 extension AppDelegate {
     func createContainer() -> Container {
@@ -25,6 +25,7 @@ extension AppDelegate {
         // Intro
         container.register(IntroViewReactor.self) {
             IntroViewReactor(
+                requiredPermissions: AbsinthePolicy.requiredPermissions,
                 permissionService: $0.resolve(PermissionServiceType.self)!,
                 presenter: $0.resolve(Presenter.self)!
             )
@@ -36,6 +37,7 @@ extension AppDelegate {
         // Permission
         container.register(PermissionViewReactor.self) {
             PermissionViewReactor(
+                requiredPermissions: AbsinthePolicy.requiredPermissions,
                 permissionService: $0.resolve(PermissionServiceType.self)!,
                 presenter: $0.resolve(Presenter.self)!
             )

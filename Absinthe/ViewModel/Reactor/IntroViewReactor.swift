@@ -21,13 +21,16 @@ public final class IntroViewReactor: Reactor {
 
     public struct State {}
 
+    private let requiredPermissions: [PermissionType]
     private let permissionService: PermissionServiceType
     private let presenter: PresenterType
 
     public init(
+        requiredPermissions: [PermissionType],
         permissionService: PermissionServiceType,
         presenter: PresenterType
     ) {
+        self.requiredPermissions = requiredPermissions
         self.permissionService = permissionService
         self.presenter = presenter
     }
@@ -35,7 +38,7 @@ public final class IntroViewReactor: Reactor {
     public func mutate(action: Action) -> Observable<Mutation> {
         switch action {
             case .checkPermission:
-                return permissionService.hasPermissions(types: PermissionType.requiredPermissions)
+                return permissionService.hasPermissions(types: requiredPermissions)
                     .do(onSuccess: { [weak presenter] hasPermission in
                         let scene: Scene = hasPermission ? .gallery : .permission
                         presenter?.present(scene: scene)

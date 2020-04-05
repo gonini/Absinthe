@@ -12,9 +12,3 @@ public enum PermissionType {
     case photo
     case notification
 }
-
-public extension PermissionType {
-    static var requiredPermissions: [PermissionType] {
-        return [.notification, .photo]
-    }
-}
